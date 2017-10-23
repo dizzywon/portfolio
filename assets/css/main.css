@@ -18,7 +18,7 @@ ul{
 	display: flex;
 	list-style-type: none;
 	justify-content: space-between;
-	text-transform: uppercase;
+	
 	
 }
   ul a{
@@ -40,16 +40,16 @@ ul{
 
 	/* Section 1 */
 
-	section.banner{
-		height: 500px;
-		background-image: url('../../assets/img/img6.jpg');
+	.banner{
+		height: 300px;
+		background-image: url('../../assets/img/img4.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
 		position: relative;
 	}
 
-	div.overlay{
+	.overlay{
 		align-items: center;
 		background: rgba(0, 0, 0, 0.45);
 		color: #fff;
@@ -60,8 +60,8 @@ ul{
 		width: 100%;
 	}
 
-	div.overlay h3{
-		font-size: 50px;
+	.overlay h3{
+		font-size: 35px;
 		letter-spacing: 2px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -113,3 +113,4 @@ ul{
 		margin: 0;
 		color: #fff;
 	}
+
