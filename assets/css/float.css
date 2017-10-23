@@ -8,9 +8,18 @@ body{
 	background: #eee;
 }
 
-nav{
-	padding: 15px 0;
-	background: #fff;
+header{
+	background-color: #000;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 900;
+}
+
+.container1{
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px 0px;
 }
 
 ul{
@@ -19,8 +28,16 @@ ul{
 	list-style-type: none;
 }
 
+ul a{
+  	font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
 .navlist li, .navItems li{
 	display: inline-block;
+}
+.navlist li a{
+	text-decoration: none;
 }
 
 /*Hack for floarted children */
@@ -118,13 +135,14 @@ ul{
 }
 
 .footer{
-	background: #fff;
+	background: #333;
 	padding: 20px 0;
 	}
 
 	.footer p{
 		text-align: center;
 		margin: 0;
+		color: #fff;
 	}
 
 
