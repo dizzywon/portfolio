@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                height: 100vh;
+            }
+            
+            .ball{
+                width: 200px;
+                height: 200px;
+                background: #bada55;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all 0.5s cubic-bezier(0.42, 0, 0.15, 0.56);
+            }
+
+            .ball:hover{
+                background: #fa0;
+                border-radius: 100%;
+                color: red;
+                letter-spacing: 10px;
+                transform: scale(1.1);
+            }
+
+            .circles{
+                height: 100px;
+                width: 100px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                background: #eee;
+                transition: all 1s ease;
+            }
+
+            .circles:nth-child(1){
+                transition: all 1s ease;
+            }
+
+            .circles:nth-child(2){
+                transition: all 1s ease-in-out;
+            }
+
+            .circles:nth-child(3){
+                transition: all 1s linear;
+            }
+
+            .circles:nth-child(4){
+                transition: all 1s cubic-bezier(0.72, 0.14, 0.1, 0.88);
+            }
+
+            .circles_parent:hover .circles{
+                transform: translateX(500px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ball">
+            BALL
+        </div>
+
+        <div class="circles_parent">
+            <div class="circles">1</div>
+            <div class="circles">2</div>
+            <div class="circles">3</div>
+            <div class="circles">4</div>
+        </div>
+    </body>
+</html>

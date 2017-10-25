@@ -15,6 +15,14 @@ header{
     top: 0;
     z-index: 900;
 }
+a{
+	cursor: pointer;
+
+}
+a:hover{
+	background: #fff;
+	color: #000;
+}
 
 .container1{
 	width: 80%;
@@ -54,6 +62,10 @@ ul a{
 }
 
 .navDesktop{
+	float: right;
+}
+
+.navMobile{
 	float: right;
 }
 

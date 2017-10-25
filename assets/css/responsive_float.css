@@ -1,0 +1,20 @@
+@media(max-width: 436px){
+	.navitems{
+		display: none;
+	}
+	.overlay h3{
+		font-size: 20px;
+		text-align: center;
+	}
+	.col-33, .container{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media(min-width: 437px){
+	.mob{
+		display: none;
+	}
+}

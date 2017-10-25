@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Positioning</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				height: 100vh;
+				background: #eee;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				border-radius: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 1s all ease;
+			}
+			div:nth-child(1){
+				background:	orange;
+				position: absolute;
+				opacity: 0.7;
+				animation: mo 5s alternate infinite;
+			}
+
+			@keyframes mo{
+				from{
+					left: 0;
+					top: 0;
+				}
+				to{
+					left: 50px;
+					top: 0;
+				}
+			}
+			
+
+			div:nth-child(2){
+				position: absolute;
+				animation: mover 5s alternate infinite;
+				opacity: 0.7;
+			}
+			@keyframes mover{
+				from{
+					background: blue;
+					left: 0;
+					top: 0;
+				}
+				to{
+					background: red;
+					left: 200px;
+					top: 0;
+				}
+			}
+
+			div:nth-child(3){
+				position: absolute;
+				animation: mov 5s alternate infinite;
+				opacity: 0.8;
+			}
+			@keyframes mov{
+				from{
+					background: green;
+					left: 0;
+					top: 0;
+				}
+				to{
+					background: yellow;
+					left: 120px;
+					top: 150px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<div>
+			A
+		</div>
+		<div>
+			B
+		</div>
+		<div>
+			C
+		</div>
+
+
+
+	</body>
+</html>

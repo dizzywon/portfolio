@@ -1,4 +1,4 @@
-@media(max-width: 425px){
+@media(max-width: 436px){
 	.navDesktop{
 		display: none;
 	}
@@ -14,7 +14,7 @@
 	}
 }
 
-@media(min-width: 426px){
+@media(min-width: 437px){
 	.navMobile{
 		display: none;
 	}
